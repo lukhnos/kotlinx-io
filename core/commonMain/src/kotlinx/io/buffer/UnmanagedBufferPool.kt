@@ -14,9 +14,9 @@ internal class UnmanagedBufferPool(
 
     override fun close() {}
 
-    @ThreadLocal
+    // @ThreadLocal
     companion object {
-        @ThreadLocal
+        // @ThreadLocal
         val Instance = UnmanagedBufferPool()
     }
 }

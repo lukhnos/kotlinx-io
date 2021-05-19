@@ -23,9 +23,9 @@ internal class DefaultBufferPool(
         source.free(instance)
     }
 
-    @ThreadLocal
+    // @ThreadLocal
     companion object {
-        @ThreadLocal
+        // @ThreadLocal
         val Instance = DefaultBufferPool()
     }
 }
